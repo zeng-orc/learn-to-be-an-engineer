@@ -14,20 +14,31 @@
                 background-color: red;
             }
             .two{
+                width: 100px;
+                height: 100px;
                 /* 相对定位 相对于自身原来的位置 原来的框还在文档流里面占有空间 */
                 /* position: relative; */
-                top: 20px;
-                left: 500px;
+                /* top: 20px;
+                left: 500px; */
+                /* 绝对定位的元素的位置相对于最近的已定位祖先元素 */
+                position: absolute;
+                /* top: 20px;
+                left: 50px; */
+                bottom: 10px;
+                right: 10px;
                 background-color: green;
             }
             .three{
+                position: relative;
                 background-color: blue;
             }
         </style>
     </head>
     <body>
         <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
+        
+        <div class="three">
+            <div class="two"></div>
+        </div>
     </body>
 </html>
