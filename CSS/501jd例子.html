@@ -15,7 +15,7 @@
                 color: #222;
             }
             .container{
-                background-color: red;
+                /* background-color: red; */
                 width: 1190px;
                 height: 450px;
                 margin: 0 auto;
@@ -26,15 +26,36 @@
                 float: left;
                 background-color: white;
             }
+            .left{
+                background-color: transparent;
+            }
             .left,.center{
                 margin-right: 10px;
+            }
+            .border{
+                width: 340px;
+                height: 420px;
+                border: 5px solid black;
+                position: relative;
+                top: 20px;
+            }
+            .border img{
+                width: 340px;
+                height: 420px;
+                position: absolute;
+                bottom: 25px;
+                left: 45px;
             }
         </style>
     </head>
     <body>
         <h3 class="title">--- 居家优品 ---</h3>
         <div class="container">
-            <div class="left">1</div>
+            <div class="left">
+                <div class="border">
+                    <img src="../Img/left.jpg" />
+                </div>
+            </div>
             <div class="center">2</div>
             <div class="right">3</div>
         </div>
