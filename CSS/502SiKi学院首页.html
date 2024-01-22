@@ -58,6 +58,35 @@
                 height: 105px;
                 background-color: #212121;
             }
+            .nav_left{
+                height: 56px;
+                float: left;
+            }
+            .nav_right{
+                height: 56px;
+                float: right;
+            }
+            .nav_left img{
+                display: block;
+                float: left;
+                height: 50px;
+                margin-top: 3px;
+                margin-left: 5px;
+            }
+            .nav_left ul{
+                list-style-type: none;
+                float: left;
+                margin: 0px 0px 0px 40px;
+                padding: 0px;
+            }
+            ul li{
+                margin: 0px 40px 0px 0px;
+                padding: 0px;
+                float: left;
+                font-size: 14px;
+                color: #c1c1c1;
+                line-height: 56px;
+            }
         </style>
     </head>
     <body>
@@ -69,7 +98,19 @@
                 心<br/>
             </a>
         </div>
-        <div class="nav"></div>
+        <div class="nav">
+            <div class="nav_left">
+                <img src="../Img/logo.png"/>
+                <ul>
+                    <li>首页</li>
+                    <li>全部课程</li>
+                    <li>Unity</li>
+                    <li>虚幻</li>
+                    <li>关于我们</li>
+                </ul>
+            </div>
+            <div class="nav_right"></div>
+        </div>
         <div class="slider"></div>
         <div class="course_list"></div>
         <div class="class_list"></div>
