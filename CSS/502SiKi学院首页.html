@@ -91,6 +91,40 @@
                 height: 451px;
                 width: 100%;
             }
+            .course_list h2{
+                font-size: 32px;
+                color: #313131;
+                font-weight: 500;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 10px;
+            }
+            .course_list h4{
+                font-size: 16px;
+                color: #919191;
+                font-weight: 400;
+                text-align: center;
+                margin-top: 0px;
+            }
+            .course_nav{
+                width: 1170px;
+                margin: 40px auto 0;
+            }
+            .course_nav a{
+                font-size: 14px;
+                color: #616161;
+                margin-right: 30px;
+                padding: 15px;
+                border-radius: 5px;
+            }
+            .selected{
+                background-color: #43bc60;
+                color: white !important;
+            }
+            .course_nav a:hover{
+                background-color: #ece8e8;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -118,7 +152,16 @@
         <div class="slider">
             <img src="../Img/A.jpg"/>
         </div>
-        <div class="course_list"></div>
+        <div class="course_list">
+            <h2>网校课程</h2>
+            <h4>精选网校课程，满足你的学习兴趣</h4>
+            <div class="course_nav">
+                <a class="selected">全部课程</a>
+                <a>Unity</a>
+                <a>Unreal</a>
+                <a>JavaEE</a>
+            </div>
+        </div>
         <div class="class_list"></div>
         <div class="introduction"></div>
         <div class="footer_link"></div>
