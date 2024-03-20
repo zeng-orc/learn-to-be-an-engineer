@@ -12,14 +12,13 @@
                 width: 800px;
                 height: 400px;
                 background-color: pink;
-                /* 默认的主轴是 x 轴 row */
-                flex-direction: column;
-                justify-content: center;
-                /* 我们需要一个侧轴居中 */
-                /* 拉伸  但是子盒子不要给高度 */
-                /* align-items: stretch; */
-                align-items: center;
+                /* 换行 */
+                flex-wrap: wrap;
+                /* 因为有了换行  此时我们侧轴上控制子元素的对齐方式我们用 align-content */
+                /* align-content: flex-start; */
                 /* align-content: center; */
+                /* align-content: space-between; */
+                align-content: space-around;
             }
 
             div span{
@@ -37,6 +36,9 @@
             <span>1</span>
             <span>2</span>
             <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
         </div>
     </body>
 
