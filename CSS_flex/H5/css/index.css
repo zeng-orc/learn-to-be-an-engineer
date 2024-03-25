@@ -9,8 +9,13 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* 搜索模块 */
-.search-index{
+.search-index {
+    display: flex;
     /* 固定定位跟父级没有关系  它以屏幕为准 */
     position: fixed;
     top: 0;
@@ -23,4 +28,27 @@ body {
     max-width: 540px;
     height: 44px;
     background-color: pink;
+}
+
+.search {
+    flex: 1;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    background-color: purple;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px auto;
+    margin: 5px auto 0;
 }
